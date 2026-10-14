@@ -6,6 +6,6 @@
    « Jeton d'accès en lecture » (v4, très long, commence par eyJ).
    ========================================================= */
 window.ONMATKOI_CONFIG = {
-  TMDB_KEY: "",
+  TMDB_KEY: "1dd495a6ef730531f639844e9b91f1f5",
   VERSION: "1.1"
 };

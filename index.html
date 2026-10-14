@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="fr" data-skin="obscure">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>OnMatKoi ?</title>
+<meta name="description" content="Des idées de films et de séries pour ce soir.">
+<meta name="theme-color" content="#0B0B0D">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="OnMatKoi">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=Bowlby+One&family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+<script>try{var s=localStorage.getItem("omk_skin");if(s)document.documentElement.setAttribute("data-skin",JSON.parse(s))}catch(e){}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="i-logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="2.5" y="6" width="19" height="13" rx="2.5"/><path d="M8 2.5l4 3.5 4-3.5"/><path d="M10.2 10.5a1.9 1.9 0 1 1 2.6 1.8c-.5.2-.8.6-.8 1.1v.3"/><circle cx="12" cy="16" r=".5" fill="currentColor"/></symbol>
+<symbol id="i-set" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></symbol>
+<symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></symbol>
+<symbol id="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l12-7.5z"/></symbol>
+<symbol id="i-redo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M20 11a8 8 0 1 0-2.3 5.7"/><path d="M20 4v7h-7"/></symbol>
+<symbol id="i-dice" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="3.5" width="17" height="17" rx="4"/><circle cx="8.5" cy="8.5" r="1.2" fill="currentColor"/><circle cx="15.5" cy="8.5" r="1.2" fill="currentColor"/><circle cx="12" cy="12" r="1.2" fill="currentColor"/><circle cx="8.5" cy="15.5" r="1.2" fill="currentColor"/><circle cx="15.5" cy="15.5" r="1.2" fill="currentColor"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"/></symbol>
+<symbol id="i-me" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c.8-3.6 3.6-5.5 7-5.5s6.2 1.9 7 5.5"/></symbol>
+<symbol id="i-us" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="9" cy="8.5" r="3"/><circle cx="16.5" cy="9.5" r="2.5"/><path d="M3 19.5c.7-3 3-4.6 6-4.6s5.3 1.6 6 4.6M15 14.6c2.6-.3 5 1 5.8 4.4"/></symbol>
+<symbol id="i-kid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="8" cy="7" r="2.8"/><circle cx="16.5" cy="10.5" r="2"/><path d="M3 20c.6-3.3 2.6-5.3 5-5.3s4.4 2 5 5.3M13.5 20c.4-2.2 1.5-3.6 3-3.6s2.6 1.4 3 3.6"/></symbol>
+<symbol id="i-film" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="4" width="17" height="16" rx="2"/><path d="M7.5 4v16M16.5 4v16M3.5 9h4M3.5 15h4M16.5 9h4M16.5 15h4"/></symbol>
+<symbol id="i-tv" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="2.5" y="6" width="19" height="13" rx="2.5"/><path d="M8 2.5l4 3.5 4-3.5"/></symbol>
+<symbol id="i-both" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="5" width="9" height="14" rx="1.5"/><rect x="12.5" y="7" width="9" height="10" rx="2"/></symbol>
+<symbol id="i-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></symbol>
+<symbol id="i-back" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></symbol>
+<symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+<symbol id="i-age" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="10" r="5"/><path d="M9 20h6"/></symbol>
+<symbol id="i-dl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></symbol>
+</defs>
+</svg>
+
+<div class="intro" id="intro" role="button" aria-label="Passer l'intro" hidden>
+  <div class="ilogo"><div class="word" id="word">ONMATKOI<i>?</i></div><div class="bar"></div><p id="typed"></p></div>
+  <span class="skip">Toucher pour passer</span>
+</div>
+
+<div class="app">
+  <div class="top">
+    <button class="brand" id="homeBtn" aria-label="Accueil"><svg aria-hidden="true"><use href="#i-logo"/></svg><b>ONMATKOI<span>?</span></b></button>
+    <button class="ib" id="detailBtn" aria-label="Recherche détaillée"><svg aria-hidden="true"><use href="#i-search"/></svg></button>
+    <button class="ib" id="openSet" aria-label="Réglages"><svg aria-hidden="true"><use href="#i-set"/></svg></button>
+  </div>
+  <div id="view"></div>
+</div>
+
+<div class="sheet" id="sheet" hidden>
+  <div class="panel" role="dialog" aria-label="Réglages">
+    <div class="prow" style="border:0"><h3 class="cond">Réglages</h3><button class="ib" id="closeSet" aria-label="Fermer"><svg aria-hidden="true"><use href="#i-x"/></svg></button></div>
+
+    <div id="installBox" hidden>
+      <div class="eyebrow lbl">Installer l'appli</div>
+      <button class="btn primary" id="installBtn"><svg aria-hidden="true"><use href="#i-dl"/></svg>Installer sur ce téléphone</button>
+    </div>
+    <div id="iosBox" hidden>
+      <div class="eyebrow lbl">Installer l'appli</div>
+      <p class="hint" style="margin:0">Sur iPhone : touche le bouton Partager de Safari, puis « Sur l'écran d'accueil ».</p>
+    </div>
+
+    <div class="eyebrow lbl">Thème</div>
+    <div class="skins" id="skins">
+      <button class="skin" data-skin="fun"><div class="sw" style="background:linear-gradient(160deg,#3A2F86,#17143A)"><i style="background:#FF6A4D"></i><i style="background:#FFCB47"></i><i style="background:#5DD6B5"></i></div><strong>Fun</strong><small>Coloré et ludique</small></button>
+      <button class="skin" data-skin="obscure"><div class="sw" style="background:linear-gradient(160deg,#2A2A2E,#0B0B0D)"><i style="background:#E3B04B"></i><i style="background:#F3F1EC"></i></div><strong>Salle obscure</strong><small>Façon Netflix</small></button>
+      <button class="skin" data-skin="lumiere"><div class="sw" style="background:linear-gradient(160deg,#FFFFFF,#DCE1EA)"><i style="background:#2F5BEA"></i><i style="background:#15171C"></i></div><strong>Lumière</strong><small>Façon Apple TV</small></button>
+    </div>
+
+    <div class="eyebrow lbl">Mes abonnements</div>
+    <div class="prow"><label for="s_netflix">Netflix</label><input type="checkbox" class="switch" id="s_netflix"></div>
+    <div class="prow"><label for="s_prime">Prime Video</label><input type="checkbox" class="switch" id="s_prime"></div>
+    <div class="prow"><label for="s_disney">Disney+</label><input type="checkbox" class="switch" id="s_disney"></div>
+    <div class="prow"><label for="s_stremio">Stremio (bouton sur chaque fiche)</label><input type="checkbox" class="switch" id="s_stremio"></div>
+
+    <div class="eyebrow lbl">Déjà regardés</div>
+    <div class="hist" id="hist"></div>
+
+    <div class="eyebrow lbl">Clé TMDB</div>
+    <p class="hint" id="keyState" style="margin:0 0 8px"></p>
+    <input class="field" id="tmdbKey" placeholder="Coller une clé ici (facultatif)" autocomplete="off" autocapitalize="off" spellcheck="false">
+    <div class="row2" style="margin-top:8px"><button class="btn outline" id="saveKey">Enregistrer</button><button class="btn outline" id="clearKey">Effacer</button></div>
+
+    <div class="eyebrow lbl">Intro</div>
+    <button class="btn outline" id="replay">Rejouer l'animation d'ouverture</button>
+
+    <p class="small" style="margin-top:22px">OnMatKoi ? · version <span id="ver"></span><br>Cette appli utilise l'API TMDB mais n'est ni approuvée ni certifiée par TMDB. Données de disponibilité fournies par JustWatch.</p>
+  </div>
+</div>
+<div class="toast" id="toast" hidden></div>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+<script>
+if("serviceWorker" in navigator){window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}))}
+</script>
+</body>
+</html>
